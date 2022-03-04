@@ -6,7 +6,6 @@ class Room:
         self.guests_list = []
 
     def get_songs_queue(self):
-        
         return len(self.songs_queue)
 
     def get_guests_list(self):
