@@ -6,10 +6,11 @@ from src.guest import Guest
 
 class TestRoom(unittest.TestCase):
     def setUp(self):
-        self.room = Room("Rock Room")
+        self.room = Room("The Divorce Force")
+        self.guest = Guest("Ross Geller" , 100)
 
     def test_room_has_name(self):
-        self.assertEqual("Rock Room", self.room.name)
+        self.assertEqual("The Divorce Force", self.room.name)
 
 
     def test_songs_queue_starts_at_0(self):
@@ -21,4 +22,6 @@ class TestRoom(unittest.TestCase):
     #check in guests and check out guests from rooms
     #add songs to rooms
 
-    # def test_check_in_guest(self):
+    def test_if_checked_in_guest(self):
+        self.room.checkin_guest(self.guest)
+        self.assertEqual(1, len(self.room.guests_list))
