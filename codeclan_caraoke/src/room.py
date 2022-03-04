@@ -11,5 +11,9 @@ class Room:
     def get_guests_list(self):
         return len(self.guests_list)
 
-    def checkin_guest(self, guest):
-        self.guests_list.append(guest)
+    def checkin_guest(self, Ross):
+        self.guests_list.append(Ross)
+
+    def checkout_guest(self, Ross):
+        self.guests_list.pop(Ross)
+    

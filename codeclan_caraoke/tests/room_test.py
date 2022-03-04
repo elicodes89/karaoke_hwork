@@ -25,3 +25,8 @@ class TestRoom(unittest.TestCase):
     def test_if_checked_in_guest(self):
         self.room.checkin_guest(self.guest)
         self.assertEqual(1, len(self.room.guests_list))
+
+    def test_if_checked_out_guest(self):
+        self.room.checkin_guest(self.guest)
+        self.room.guests_list.pop()
+        self.assertEqual(0, len(self.room.guests_list))
