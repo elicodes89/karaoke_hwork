@@ -15,5 +15,5 @@ class TestSong(unittest.TestCase):
     def test_song_has_genre(self):
         self.assertEqual("Rock", self.song_2.genre)
 
-    # def test_songs_queue_starts_at_0(self):
-    #     self.assertEqual(0, self.song.songsqueue())
+    def test_songs_queue_starts_at_0(self):
+        self.assertEqual(0, self.song.songsqueue())
