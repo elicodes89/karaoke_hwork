@@ -9,7 +9,6 @@ class TestSong(unittest.TestCase):
     def setUp(self):
         self.song_1 = Song("Love", "Romantic")
         self.song_2 = Song("Geology Rocks", "Rock")
-        # self.song_3 = Song("Sublime", "Pop")
         self.room = Room("The Divorce Force" , 90)
 
 

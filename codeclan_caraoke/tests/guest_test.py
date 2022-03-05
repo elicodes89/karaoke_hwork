@@ -5,8 +5,8 @@ from src.room import Room
 
 class TestGuest(unittest.TestCase):
     def setUp(self):
-        self.guest = Guest("Ross Geller" , 100)
-        self.guest_2 = Guest("Rachel Green",80)
+        self.guest = Guest("Ross Geller" , 100 , "Unagi")
+        self.guest_2 = Guest("Rachel Green", 80 , "Smelly Cat")
         self.room = Room("The Divorce Force", 90)
 
     def test_guest_has_name(self):

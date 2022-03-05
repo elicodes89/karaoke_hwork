@@ -7,6 +7,7 @@ class Room:
         self.guests_list = []
         
 
+
     def get_songs_queue(self):
         return len(self.songs_queue)
 
@@ -21,4 +22,5 @@ class Room:
     
     def add_song_to_room(self, song):
         self.songs_queue.append(song)
+
 
