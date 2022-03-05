@@ -6,7 +6,7 @@ from src.guest import Guest
 
 class TestRoom(unittest.TestCase):
     def setUp(self):
-        self.room = Room("The Divorce Force")
+        self.room = Room("The Divorce Force" , 90)
         self.guest = Guest("Ross Geller" , 100)
         self.song = Song("Geology Rocks" , "Rock")
 

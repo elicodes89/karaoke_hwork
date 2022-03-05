@@ -1,7 +1,8 @@
 class Room:
 
-    def __init__(self, name):
+    def __init__(self, name, fee):
         self.name = name
+        self.fee = fee
         self.songs_queue = []
         self.guests_list = []
 
