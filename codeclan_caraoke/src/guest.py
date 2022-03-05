@@ -4,4 +4,3 @@ class Guest:
         self.name = name
         self.wallet = wallet
     
-        

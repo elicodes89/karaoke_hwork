@@ -35,3 +35,7 @@ class TestRoom(unittest.TestCase):
     def test_if_added_song_to_room(self):
         self.room.add_song_to_room(self.song)
         self.assertEqual(1, len(self.room.songs_queue))
+
+    def test_if_checked_in_second_guest(self):
+        self.room.checkin_guest(self.guest)
+        self.assertEqual(1, len(self.room.guests_list))
