@@ -17,3 +17,5 @@ class Room:
     def checkout_guest(self, Ross):
         self.guests_list.pop(Ross)
     
+    def add_song_to_room(self, song):
+        self.songs_queue.append(song)

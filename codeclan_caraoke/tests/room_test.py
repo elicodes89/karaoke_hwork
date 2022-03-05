@@ -8,6 +8,7 @@ class TestRoom(unittest.TestCase):
     def setUp(self):
         self.room = Room("The Divorce Force")
         self.guest = Guest("Ross Geller" , 100)
+        self.song = Song("Geology Rocks" , "Rock")
 
     def test_room_has_name(self):
         self.assertEqual("The Divorce Force", self.room.name)
@@ -30,3 +31,7 @@ class TestRoom(unittest.TestCase):
         self.room.checkin_guest(self.guest)
         self.room.guests_list.pop()
         self.assertEqual(0, len(self.room.guests_list))
+
+    def test_if_added_song_to_room(self):
+        self.room.add_song_to_room(self.song)
+        self.assertEqual(1, len(self.room.songs_queue))
