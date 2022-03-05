@@ -7,5 +7,8 @@ class Guest:
     def enough_money_to_pay_entry_fee(self, price):
         return self.wallet >= price.fee
 
+    def not_enough_money_to_pay_entry_fee(self, price):
+        return self.wallet <= price.fee
+
 
     
